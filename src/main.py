@@ -2,8 +2,9 @@ import json
 from agents.central_agent import CentralControlAgent
 from utils.email_parser import EmailParser
 import sys
+from email_config.email_config import email_config
 
-def main():
+def main(eml_path):
     """主程序"""
     print("=" * 60)
     print("恶意邮件检测多智能体系统")
@@ -13,27 +14,12 @@ def main():
         # 初始化中央控制智能体
         print("初始化智能体系统...")
         central_agent = CentralControlAgent()
-        
-        # 选择测试模式
-        print("\n请选择模式:")
-        print("1. 使用测试邮件")
-        print("2. 解析EML文件")
-        choice = input("请输入选择 (1/2): ").strip()
-        
-        if choice == "1":
-            # 使用测试邮件
-            email_data = EmailParser.create_test_email()
-            print("\n📧 使用测试邮件进行分析...")
-        elif choice == "2":
-            # 从EML文件解析
-            eml_path = input("请输入EML文件路径: ").strip()
-            with open(eml_path, 'rb') as f:
-                raw_email = f.read()
-            email_data = EmailParser.parse_email(raw_email)
-            print(f"\n📧 已解析邮件: {email_data.get('subject', '无主题')}")
-        else:
-            print("无效选择，使用测试邮件")
-            email_data = EmailParser.create_test_email()
+
+        # 从EML文件解析
+        with open(eml_path, 'rb') as f:
+            raw_email = f.read()
+        email_data = EmailParser.parse_email(raw_email)
+        print(f"\n📧 已解析邮件: {email_data.get('subject', '无主题')}")
         
         # 显示邮件基本信息
         print("\n📨 邮件基本信息:")
@@ -118,4 +104,5 @@ def main():
         traceback.print_exc()
 
 if __name__ == "__main__":
-    main()
+    file_path = r'D:\GitWork\phishing_email_detector\data\raw\[电子发票_ 271200085].eml'
+    main(file_path)

@@ -1,0 +1,124 @@
+Received: from a115-196.smtp-out.us-east-2.amazonses.com (a115-196.smtp-out.us-east-2.amazonses.com [54.240.115.196])
+	by newxmmxsza27-0.qq.com (NewMX) with SMTP id 4768DAF7
+	for <1833185295@qq.com>; Fri, 21 Nov 2025 10:17:54 +0800
+X-QQ-mid: xmmxza27-0t1763691878tep33s8ye
+Sender: 010f019aa43a5642-f05ba76e-2ddf-44e6-9abf-aeb0e5f106d7-000000@us-east-2.amazonses.com
+X-QQ-CSender: 010f019aa43a5642-f05ba76e-2ddf-44e6-9abf-aeb0e5f106d7-000000@us-east-2.amazonses.com
+X-QQ-XMAILINFO: MK3I/c84eLPSuhBAgAeOOX9KwXZEfHi+WnT85ORxg4x3dA2C/AZD2GY5HRt3o9
+	 iqN8VogtvlRlo29ervJetbQP6R0K0J+iDm0Py/1a45kV9nUD7PsaagJ+lfKmRyLZXyDwXP4ydlAt
+	 eoPa/qVaE8wjD7zT9gw2lXF90B6F36Bp1idpVhwnBvkpaRaExLYEEln905UdYkiWA+zqjU1YAP3S
+	 8K2LuUlTpNR2bU4MTCHVtpAYjZR7EPAQgCuFg6UaWc33Q6xwya5ojoErJX8yNiup1sYvuuLnZaOV
+	 t13e9rTKHWcOnH0UYWvp3wm7YVzSCseCYxlILHO1/0FNsYWdNU0fpPsqlpz6LbvcHPizCUi/FRjg
+	 NY/Rk3kpLBkPS+3nxRYz0QMYBJ1wBDIG8Miq75cBGq4Voq7P26N9LJ3jFFQCIPxWREq/7Sa7hsT5
+	 SjXqYu1MGhvQuPJ3BbwEwpcfCyZKE/kMdWA7r65oB39V09+7oiOkfUbAtExtj7TdAiaT0ZTrXoE3
+	 dDVRUe0wauSZugii9P3MHchnUgiOEw3VOjwSYt29rIF1hB3HIEAQOoSJS+6huJFi+PstrYVdRT4Z
+	 tEBG/eVUSd86m5RdJOyESfWFn2sMLRQ0ow7OUUNag3UTwOXiMFBUcoGiwQyEBJAHZd2RVdSN4cnf
+	 NpkUxRaDC6IfYschJRXjD6RTx//UkDSv6eunG3pWw78K+U5cHQaLU4RALGGV+qlKakDv/sV8L6GK
+	 G1G0zHi10hw/fflidrf6/rZYykkyVJzHqdS2BMQQxafyQAm5eekuE3gyp8q28jL4LXr90lKiA1aH
+	 IqkZuOd4fvt2TF6/2F+kXfU24R0UlgEQe/1aXSCrGbEufJl2IoelX0nxFutCmsHhFXjTQMiNo8Dv
+	 D52x4faHoXqgAtw4ycXsmTbnDAWGkvA2pXIhhw22xFCOdjq+M2NABMLeathcP3gexwz4zp8zW9Y6
+	 NiGGN6dN2fwV842rfZ3+zq36a8wXYMV5LYCz9yXs/cC4KUcdUHE2DQj64cFY36uD1YPxKsQBGTbM
+	 8QEefyFdr1Wp6z0AnWb/jzMdqJsuDBopHMIay+pERGpbOsHvGZWABbOAYRRzy4hWZ8Qb4QbbCHQI
+	 G7q2HRU1IDLmsoIVPob0xr98HmssTmdyQeL8xF0wXyFzYAvP1wq/uf+CN42sh9vq6byU4IP2puR7
+	 88ymUs/QUEN/Ek4pU+YpTBqH9xjA9Mxcd+pw/GjyFoyghYBZSbL04UX62Qtg4cM1sSS2CBLnjGCG
+	 Q6YnVKMLzDCSZ/29WirGspKhXph/s5s1nuB4Gq/sqIxsrEvw6NsirqAVVovlbOND1MOLM2b9Qrsf
+	 oOH9lhIuJ1yN0wHokzyziyXg==
+X-QQ-XMRINFO: M/715EihBoGSf6IYSX1iLFg=
+Authentication-Results: mx.qq.com; spf=pass(54.240.115.196) smtp.mailfrom=<010
+	 f019aa43a5642-f05ba76e-2ddf-44e6-9abf-aeb0e5f106d7-000000@us-east-2.amazonse
+	 s.com>; dkim=pass(signature was verified) header.d=freecodecamp.org; dmarc=p
+	 ass(p=QUARANTINE sp=REJECT pct=100) header.from=freecodecamp.org
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=xtvzsasjxsje2d2eg3zirbmf5yz34y3f; d=freecodecamp.org;
+	t=1763691878;
+	h=From:To:Subject:MIME-Version:Content-Type:Content-Transfer-Encoding:Message-ID:Date;
+	bh=HrcOb7PB6+AaSEM1kLtrt62fyW4FC+lMFzmedtu0Jbc=;
+	b=JG+88GlezU3FArg+4r1J1RuBr9vaT4dshiR2pQDmMxH9scKUsTnLLfUuduEIxSTv
+	fban20lwAH76UkamrCLv2ZVL9Cb7vhi2VJc7akop5xmB+FiuXFcLyTCUMzb8y+BMcKT
+	YnL5t3yvW2pnqV8JVHHCaONmct+l/+2xZQjZAHeSBNRkJW8Bfx+LQ2cSAV1cN5tVMQa
+	ki/FdLbSRJny+5xHPtr1iI6TBOt5ZitXETDbCQPJ7UbCtaYy/21cpuz9krpJzFfUpFk
+	qEjyE5VaHvhsekUdiEG91TPt689CLYJvV5Uv93QU+3+V8k+pxV34GyDmRf29JjUp6PJ
+	Q1rlsruKYA==
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=ndjes4mrtuzus6qxu3frw3ubo3gpjndv; d=amazonses.com; t=1763691878;
+	h=From:To:Subject:MIME-Version:Content-Type:Content-Transfer-Encoding:Message-ID:Date:Feedback-ID;
+	bh=HrcOb7PB6+AaSEM1kLtrt62fyW4FC+lMFzmedtu0Jbc=;
+	b=tPZFr5Leq2EdYFZGJ/rbDO9JFdKiTpZJXwGPLHCPLrC5ILRTQWPghenjFBrwm/mN
+	fSEjMJhSC4qLI1QK4IDxpLNYoxEmoQFz1MGT4YVroCU3+bM3+TRCkyhsn667TqUtXq+
+	Fl4so62fWJvpeYLAFNjJQSLPhxbn0GJlmIbrBWTs=
+From: Quincy Larson <quincy@freecodecamp.org>
+To: 1833185295@qq.com
+Subject: Learn Back-End Development for Beginners [Free 2 hour Node.js
+ course]
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Message-ID: <010f019aa43a5642-f05ba76e-2ddf-44e6-9abf-aeb0e5f106d7-000000@us-east-2.amazonses.com>
+Date: Fri, 21 Nov 2025 02:24:37 +0000
+Feedback-ID: ::1.us-east-2.1hDOIBmCg4sVkd/C4kNDG1+wLyFqQW9X4Rn89gF2+7s=:AmazonSES
+X-SES-Outgoing: 2025.11.21-54.240.115.196
+
+Here are this week's five freeCodeCamp resources that are worth your time:
+
+1. freeCodeCamp just published this beginner-friendly back-end development =
+course. You'll learn how to build your own web servers and APIs using Node.=
+js, Express, and MongoDB. freeCodeCamp's website and mobile apps are built =
+using these tools, which make up the popular MERN stack. You'll also get so=
+me exposure to database architecture, security principles, testing best pra=
+ctices, and more. (2 hour YouTube course): https://www.freecodecamp.org/new=
+s/intro-to-backend-web-development-nodejs-express-mongodb/
+
+2. freeCodeCamp also published a comprehensive Blender and Three.js course =
+where you'll build your own 3D portfolio piece: a render of an adorable hom=
+e office. If you're interested in 3D rendering and computer graphics, this =
+is the course for you. You'll learn key concepts like Quad Topology, Raycas=
+ting, OrbitControls, and more. By the end of the course, your 3D model will=
+ be live on the web so you can share it with your friends. (9 hour YouTube =
+course): https://www.freecodecamp.org/news/create-a-cute-room-portfolio-wit=
+h-threejs-blender-javascript/
+
+3. On this week's freeCodeCamp podcast I had the honor of interviewing Harv=
+ard CS50 professor David J. Malan. Over the years, freeCodeCamp has publish=
+ed many of his computer science courses, which millions of people have now =
+taken. I was hyped to ask him how he uses emerging LLM tools, and where he =
+thinks the software engineering field is heading. I had a LOT of questions =
+for him and he answered all of them. (1 hour watch or listen in your favori=
+te podcast app): https://www.freecodecamp.org/news/harvard-cs50-prof-david-=
+j-malan-on-why-you-should-learn-programming-slowly-podcast-197/
+
+4. freeCodeCamp also published a handbook on using Docker with Node.js. You=
+'ll learn how to set up Docker and Docker Compose. You'll also learn fundam=
+ental concepts like Volumes, Images, and Containers. This is an excellent r=
+esource for you to read through and code along with. Bookmark it for future=
+ reference. (full length handbook): https://www.freecodecamp.org/news/how-t=
+o-use-to-docker-with-nodejs-handbook/
+
+5. Level up your JavaScript implementation skills with this new freeCodeCam=
+p course on Clean Code. You'll learn how to detect =E2=80=9Ccode smells=E2=
+=80=9D and refactor your JavaScript accordingly. You'll also learn how to u=
+se ESLint and Prettier to automate some of the more error-prone aspects of =
+shipping code. (1 hour watch): https://www.freecodecamp.org/news/level-up-y=
+our-javascript-detect-smells-and-write-clean-code/
+
+It's hard to believe that 2025 is almost over. The freeCodeCamp community i=
+s hard at work on a ton of new courses that we'll ship over the next few we=
+eks. We're going to ensure that everybody has plenty to learn over the holi=
+day break. If you're feeling generous, please consider supporting our chari=
+ty and our mission so we can do even more: https://www.freecodecamp.org/don=
+ate
+
+Quote of the Week:=20
+=E2=80=9CThere=E2=80=99s something liberating about realizing that at the e=
+nd of the day everything reduces to zeros and ones. It=E2=80=99s not magic.=
+ And once students see that, they think: OK, I got this.=E2=80=9D =E2=80=94=
+ Harvard computer science professor David J. Malan on this week's freeCodeC=
+amp podcast
+
+Until next week, happy coding.
+
+-- Quincy Larson
+
+Teacher and founder of freeCodeCamp.org
+
+If these aren't worth your time, you can turn them off: https://www.freecod=
+ecamp.org/ue/yhnsA83Bw8jqFLW5Vji9w

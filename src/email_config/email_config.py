@@ -1,7 +1,7 @@
 import os
 from dotenv import load_dotenv
 
-load_dotenv()
+load_dotenv('../../../.env')
 
 class Config:
     # DeepSeek API配置
@@ -15,4 +15,4 @@ class Config:
     DETECTION_THRESHOLD = 0.7
     SUSPICIOUS_THRESHOLD = 0.4
     
-config = Config()
+email_config = Config()

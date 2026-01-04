@@ -2,16 +2,16 @@ from typing import Dict, Any
 from langchain.tools import tool
 from langchain_deepseek import ChatDeepSeek
 from langchain.agents import Tool
-import config
+import email_config
 
 class ToolAgents:
     def __init__(self):
         """初始化所有工具智能体"""
         self.llm = ChatDeepSeek(
             model="deepseek-chat",
-            temperature=config.config.AGENT_TEMPERATURE,
-            api_key=config.config.DEEPSEEK_API_KEY,
-            base_url=config.config.DEEPSEEK_API_BASE
+            temperature=email_config.email_config.AGENT_TEMPERATURE,
+            api_key=email_config.email_config.DEEPSEEK_API_KEY,
+            base_url=email_config.email_config.DEEPSEEK_API_BASE
         )
         
     def header_detection_agent(self, email_headers: Dict[str, Any]) -> Dict[str, Any]:

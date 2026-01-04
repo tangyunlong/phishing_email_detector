@@ -2,7 +2,7 @@ from typing import Dict, Any, List, TypedDict
 from langgraph.graph import StateGraph, END
 from langchain.messages import HumanMessage, SystemMessage
 from langchain_deepseek import ChatDeepSeek
-import config
+import email_config.email_config as email_config
 from .tool_agents import ToolAgents
 import json
 
@@ -22,9 +22,8 @@ class CentralControlAgent:
         """初始化中央控制智能体"""
         self.llm = ChatDeepSeek(
             model="deepseek-chat",
-            temperature=config.config.AGENT_TEMPERATURE,
-            api_key=config.config.DEEPSEEK_API_KEY,
-            base_url=config.config.DEEPSEEK_API_BASE
+            api_key='my-api',
+            base_url='https://api.deepseek.com/v1'
         )
         
         self.tool_agents = ToolAgents()
@@ -249,7 +248,7 @@ class CentralControlAgent:
         # 条件：高风险但置信度不高，需要人工审核
         if decision.get("risk_level") in ["high", "critical"]:
             confidence = decision.get("confidence", 0)
-            if confidence < config.config.DETECTION_THRESHOLD:
+            if confidence < email_config.email_config.DETECTION_THRESHOLD:
                 state["need_human_review"] = True
                 return "human_review"
         
